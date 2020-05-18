@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ByteBank.Funcionarios
+﻿namespace ByteBank.Employees
 {
     public class Auxiliar : Employee
     {
-        public Auxiliar(string cpf) : base(2000, cpf)
+        public Auxiliar(string personID) : base(2000, personID)
         {
         }
 

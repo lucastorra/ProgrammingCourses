@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ByteBank.Funcionarios
+namespace ByteBank.Employees
 {
     public abstract class Employee
     {
         public static int TotalEmployee { get; private set; }
 
         public string Name { get; set; }
-        public string CPF { get; private set; }
+        public string PersonID { get; private set; }
         public double Salary { get; protected set; }
 
-        public Employee(double salary, string cpf)
+        public Employee(double salary, string personID)
         {
             Console.WriteLine("Create Emproyee");
 
-            CPF = cpf;
+            PersonID = personID;
             Salary = salary;
 
             TotalEmployee++;

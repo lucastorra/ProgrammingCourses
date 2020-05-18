@@ -42,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Funcionarios\Auxiliar.cs" />
-    <Compile Include="Funcionarios\Developer.cs" />
-    <Compile Include="Funcionarios\Designer.cs" />
-    <Compile Include="Funcionarios\Ceo.cs" />
-    <Compile Include="Funcionarios\Employee.cs" />
-    <Compile Include="Funcionarios\AccountManager.cs" />
+    <Compile Include="Employees\Auxiliar.cs" />
+    <Compile Include="Employees\Developer.cs" />
+    <Compile Include="Employees\Designer.cs" />
+    <Compile Include="Employees\Ceo.cs" />
+    <Compile Include="Employees\Employee.cs" />
+    <Compile Include="Employees\AccountManager.cs" />
     <Compile Include="BonusManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

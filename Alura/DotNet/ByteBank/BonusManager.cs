@@ -1,4 +1,4 @@
-﻿using ByteBank.Funcionarios;
+﻿using ByteBank.Employees;
 
 namespace ByteBank
 {

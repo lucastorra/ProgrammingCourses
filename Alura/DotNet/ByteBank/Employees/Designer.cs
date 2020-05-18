@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank.Funcionarios
+namespace ByteBank.Employees
 {
-    public class Developer : Employee
+    public class Designer : Employee
     {
-        public Developer(string cpf) : base(3000, cpf)
+        public Designer(string personID) : base(3000, personID)
         {
         }
 
         public override void IncreaseSalary()
         {
-            Salary *= 0.15;
+            Salary *= 1.11;
         }
 
         public override double GetBonus()
         {
-            return Salary * 0.1;
+            return Salary * 0.17;
         }
     }
 }

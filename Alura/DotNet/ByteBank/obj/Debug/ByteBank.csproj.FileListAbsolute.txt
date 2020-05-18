@@ -1,6 +1,6 @@
-D:\ProgrammingCourses\Alura\DotNet\ByteBank\obj\Debug\ByteBank.csproj.CoreCompileInputs.cache
 D:\ProgrammingCourses\Alura\DotNet\ByteBank\bin\Debug\ByteBank.exe.config
 D:\ProgrammingCourses\Alura\DotNet\ByteBank\bin\Debug\ByteBank.exe
 D:\ProgrammingCourses\Alura\DotNet\ByteBank\bin\Debug\ByteBank.pdb
+D:\ProgrammingCourses\Alura\DotNet\ByteBank\obj\Debug\ByteBank.csproj.CoreCompileInputs.cache
 D:\ProgrammingCourses\Alura\DotNet\ByteBank\obj\Debug\ByteBank.exe
 D:\ProgrammingCourses\Alura\DotNet\ByteBank\obj\Debug\ByteBank.pdb

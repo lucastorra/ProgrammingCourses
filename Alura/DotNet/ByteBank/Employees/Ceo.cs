@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ByteBank.Funcionarios
+namespace ByteBank.Employees
 {
     public class Ceo : Employee
     {
-        public Ceo(string cpf) : base(5000, cpf)
+        public Ceo(string personID) : base(5000, personID)
         {
-            Console.WriteLine("Criando DIRETOR");
+            Console.WriteLine("Create DIRETOR");
         }
 
         public override void IncreaseSalary()

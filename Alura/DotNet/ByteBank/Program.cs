@@ -23,7 +23,7 @@ namespace ByteBank
             Employee pedro = new Designer("833.222.048-39");
             pedro.Nome = "Pedro";
 
-            Employee roberta = new Diretor("159.753.398-04");
+            Employee roberta = new Ceo("159.753.398-04");
             roberta.Nome = "Roberta";
 
             Employee igor = new Auxiliar("981.198.778-53");
@@ -32,7 +32,7 @@ namespace ByteBank
             Employee camila = new GerenteDeConta("326.985.628-89");
             camila.Nome = "Camila";
 
-            Desenvolvedor guilherme = new Desenvolvedor("456.175.468-20"); 
+            Developer guilherme = new Developer("456.175.468-20"); 
             guilherme.Nome = "Guilherme"; 
 
             gerenciadorBonificacao.Registrar(guilherme);

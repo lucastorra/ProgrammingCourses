@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckingAccounts\AccountHolder.cs" />
+    <Compile Include="CheckingAccounts\CheckingAccount.cs" />
     <Compile Include="Employees\AuthenticableEmployee.cs" />
     <Compile Include="Employees\Auxiliar.cs" />
     <Compile Include="Employees\Developer.cs" />

@@ -8,24 +8,24 @@ namespace ByteBank.Funcionarios
 {
     public abstract class Employee
     {
-        public static int TotalDeFuncionarios { get; private set; }
+        public static int TotalEmployee { get; private set; }
 
-        public string Nome { get; set; }
+        public string Name { get; set; }
         public string CPF { get; private set; }
-        public double Salario { get; protected set; }
+        public double Salary { get; protected set; }
 
-        public Employee(double salario, string cpf)
+        public Employee(double salary, string cpf)
         {
-            Console.WriteLine("Criando FUNCIONARIO");
+            Console.WriteLine("Create Emproyee");
 
             CPF = cpf;
-            Salario = salario;
+            Salary = salary;
 
-            TotalDeFuncionarios++;
+            TotalEmployee++;
         }
 
-        public abstract void AumentarSalario();
+        public abstract void IncreaseSalary();
 
-        public abstract double GetBonificacao();
+        public abstract double GetBonus();
     }
 }

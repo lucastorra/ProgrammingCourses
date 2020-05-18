@@ -13,14 +13,14 @@ namespace ByteBank.Funcionarios
             Console.WriteLine("Criando DIRETOR");
         }
 
-        public override void AumentarSalario()
+        public override void IncreaseSalary()
         {
-            Salario *= 1.15;
+            Salary *= 1.15;
         }
 
-        public override double GetBonificacao()
+        public override double GetBonus()
         {
-            return Salario * 0.5;
+            return Salary * 0.5;
         }
     }
 }

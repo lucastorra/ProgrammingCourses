@@ -1,24 +1,19 @@
 ﻿using ByteBank.Funcionarios;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ByteBank
 {
     public class BonusManager
     {
-        private double _totalBonificacao;
+        private double _totalBonus;
 
-        public void Registrar(Employee funcionario)
+        public void Record(Employee employee)
         {
-            _totalBonificacao += funcionario.GetBonificacao();
+            _totalBonus += employee.GetBonus();
         }
         
-        public double GetTotalBonificacao()
+        public double GetTotalBonus()
         {
-            return _totalBonificacao;
+            return _totalBonus;
         }
 
     }

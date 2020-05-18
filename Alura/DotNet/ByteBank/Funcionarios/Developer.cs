@@ -12,14 +12,14 @@ namespace ByteBank.Funcionarios
         {
         }
 
-        public override void AumentarSalario()
+        public override void IncreaseSalary()
         {
-            Salario *= 0.15;
+            Salary *= 0.15;
         }
 
-        public override double GetBonificacao()
+        public override double GetBonus()
         {
-            return Salario * 0.1;
+            return Salary * 0.1;
         }
     }
 }

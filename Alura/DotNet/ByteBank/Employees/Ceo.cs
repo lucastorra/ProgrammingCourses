@@ -1,12 +1,12 @@
-﻿using System;
+﻿using ByteBank.Systems;
+using System;
 
 namespace ByteBank.Employees
 {
-    public class Ceo : Employee
+    public class Ceo : Authenticatable
     {
-        public Ceo(string personID) : base(5000, personID)
+        public Ceo(string personID) : base(5000, personID) 
         {
-            Console.WriteLine("Create DIRETOR");
         }
 
         public override void IncreaseSalary()

@@ -12,8 +12,6 @@ namespace ByteBank.Employees
 
         public Employee(double salary, string personID)
         {
-            Console.WriteLine("Create Emproyee");
-
             PersonID = personID;
             Salary = salary;
 

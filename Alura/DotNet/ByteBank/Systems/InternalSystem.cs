@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ByteBank.Employees;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,21 @@ namespace ByteBank.Systems
 {
     class InternalSystem
     {
+        public bool SignIn(Authenticatable authenticatable, string password)
+        {
+            bool userAuthenticated = authenticatable.Authenticate(password);
+
+            if (userAuthenticated)
+            {
+                Console.WriteLine("Welcome to System");
+                return true;
+            }
+            else 
+            {
+                Console.WriteLine("Incorrect Password");
+                return false; 
+            }
+            
+        }
     }
 }

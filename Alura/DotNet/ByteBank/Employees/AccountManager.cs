@@ -1,6 +1,8 @@
-﻿namespace ByteBank.Employees
+﻿using ByteBank.Systems;
+
+namespace ByteBank.Employees
 {
-    public class AccountManager : Employee
+    public class AccountManager : Authenticatable
     {
         public AccountManager(string personID) : base(4000, personID)
         {

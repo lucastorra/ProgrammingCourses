@@ -1,5 +1,6 @@
 ﻿using System;
 using ByteBank.Employees;
+using ByteBank.Systems;
 
 namespace ByteBank
 {
@@ -7,9 +8,32 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
-            CalculateBonus(); 
+            //CalculateBonus(); 
+            UsingSystem();
 
             Console.ReadLine(); 
+        }
+
+        public static void UsingSystem()
+        {
+            InternalSystem internalSystem = new InternalSystem();
+
+            Ceo roberta = new Ceo("13123213");
+            roberta.Name = "Roberta";
+            roberta.Password = "123";
+
+            AccountManager camila = new AccountManager("13123213");
+            camila.Name = "Roberta";
+            camila.Password = "123";
+
+
+            internalSystem.SignIn(roberta, "123");
+            internalSystem.SignIn(roberta, "345");
+
+            internalSystem.SignIn(camila, "123");
+            internalSystem.SignIn(camila, "345");
+
+
         }
 
         public static void CalculateBonus() 

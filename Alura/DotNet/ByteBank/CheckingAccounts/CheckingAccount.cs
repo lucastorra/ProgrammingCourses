@@ -1,33 +1,20 @@
 ﻿// using _05_ByteBank;
 
+using System;
+
 namespace ByteBank
 {
     public class CheckingAccount
     {
         public AccountHolder AccountHolder { get; set; }
 
+        public static int BankCharges { get; set; }
+
         public static int TotalAccounts { get; private set; }
-
-
-        private int _branchNumber;
-        public int BranchNumber
-        {
-            get
-            {
-                return _branchNumber;
-            }
-            set
-            {
-                if (value <= 0)
-                {
-                    return;
-                }
-
-                
-                _branchNumber = value;
-            }
-        }
-        public int AccountNumber { get; set; }
+        
+        //Property ReadOnly, only constructor can increment.
+        public int BranchNumber { get; }
+        public int AccountNumber { get; }
 
         private double _balance = 100;
 
@@ -51,10 +38,24 @@ namespace ByteBank
 
         public CheckingAccount(int branchNumber, int accountNumber)
         {
+            if (branchNumber <= 0)
+            {
+                ArgumentException argumentException = new ArgumentException("The argument Branch must be greater than zero.", nameof(branchNumber));
+                throw argumentException;
+            }
+
+            if(accountNumber <= 0)
+            {
+                ArgumentException argumentException = new ArgumentException("The argument Account must be greater than zero.", nameof(accountNumber));
+                throw argumentException;
+            }
+
             BranchNumber = branchNumber;
             AccountNumber = accountNumber;
 
             TotalAccounts++;
+
+            BankCharges = 30 / TotalAccounts;
         }
 
 

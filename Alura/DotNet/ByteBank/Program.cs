@@ -9,7 +9,23 @@ namespace ByteBank
         static void Main(string[] args)
         {
             //CalculateBonus(); 
-            UsingSystem();
+            //UsingSystem();
+
+            try
+            {
+                CheckingAccount checkingAccount = new CheckingAccount(9596, 0188722);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message + "Param: " + ex.ParamName);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
+            Console.WriteLine(CheckingAccount.BankCharges);
 
             Console.ReadLine(); 
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Funcionarios
 {
-    public abstract class Funcionario
+    public abstract class Employee
     {
         public static int TotalDeFuncionarios { get; private set; }
 
@@ -14,7 +14,7 @@ namespace ByteBank.Funcionarios
         public string CPF { get; private set; }
         public double Salario { get; protected set; }
 
-        public Funcionario(double salario, string cpf)
+        public Employee(double salario, string cpf)
         {
             Console.WriteLine("Criando FUNCIONARIO");
 

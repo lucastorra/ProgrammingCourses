@@ -1,23 +1,7 @@
-﻿using ByteBank.Employees;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ByteBank.Systems
+﻿namespace ByteBank.Systems
 {
-    public abstract class Authenticatable : Employee
+    public interface Authenticatable
     {
-        public string Password { get; set; }
-
-        public Authenticatable(double salary, string personID) : base(salary, personID)
-        {
-        }
-
-        public bool Authenticate(string password)
-        {
-            return Password == password;
-        }
+        bool Authenticate(string password);     
     }
 }

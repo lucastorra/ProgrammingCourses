@@ -2,7 +2,7 @@
 
 namespace ByteBank.Employees
 {
-    public class AccountManager : Authenticatable
+    public class AccountManager : AuthenticableEmployee
     {
         public AccountManager(string personID) : base(4000, personID)
         {
@@ -17,5 +17,6 @@ namespace ByteBank.Employees
         {
             return Salary * 0.25;
         }
+                
     }
 }

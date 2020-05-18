@@ -1,0 +1,19 @@
+﻿using ByteBank.Systems;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ByteBank
+{
+    class SalesPartner : Authenticatable
+    {
+        public string Password { get; private set; }
+
+        public bool Authenticate(string password)
+        {
+            return Password == password;
+        }
+    }
+}

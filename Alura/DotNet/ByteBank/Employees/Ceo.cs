@@ -3,7 +3,7 @@ using System;
 
 namespace ByteBank.Employees
 {
-    public class Ceo : Authenticatable
+    public class Ceo : AuthenticableEmployee
     {
         public Ceo(string personID) : base(5000, personID) 
         {

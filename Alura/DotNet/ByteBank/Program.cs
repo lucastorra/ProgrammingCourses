@@ -22,14 +22,14 @@ namespace ByteBank
             roberta.Name = "Roberta";
             roberta.Password = "123";
 
-            AccountManager camila = new AccountManager("13123213");
-            camila.Name = "Roberta";
+            SalesPartner camila = new SalesPartner();
             camila.Password = "123";
 
-
+            Console.WriteLine("roberta");
             internalSystem.SignIn(roberta, "123");
             internalSystem.SignIn(roberta, "345");
 
+            Console.WriteLine("camila");
             internalSystem.SignIn(camila, "123");
             internalSystem.SignIn(camila, "345");
 

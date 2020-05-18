@@ -9,7 +9,7 @@ namespace ByteBank.Systems
 {
     class InternalSystem
     {
-        public bool SignIn(Authenticatable authenticatable, string password)
+        public bool SignIn(IAuthenticatable authenticatable, string password)
         {
             bool userAuthenticated = authenticatable.Authenticate(password);
 

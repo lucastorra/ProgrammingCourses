@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
-    class SalesPartner : Authenticatable
+    public class SalesPartner : IAuthenticatable
     {
-        public string Password { get; private set; }
+        public string Password { get; set; }
 
         public bool Authenticate(string password)
         {

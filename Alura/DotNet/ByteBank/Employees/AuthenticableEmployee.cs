@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Employees
 {
-    public abstract class AuthenticableEmployee : Employee, Authenticatable
+    public abstract class AuthenticableEmployee : Employee, IAuthenticatable
     {
         public string Password { get; set; }
 

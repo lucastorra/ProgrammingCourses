@@ -1,6 +1,6 @@
 ﻿namespace ByteBank.Systems
 {
-    public interface Authenticatable
+    public interface IAuthenticatable
     {
         bool Authenticate(string password);     
     }

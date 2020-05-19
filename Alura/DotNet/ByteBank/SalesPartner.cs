@@ -11,9 +11,10 @@ namespace ByteBank
     {
         public string Password { get; set; }
 
+        private AutenticationHelper _autenticationHelper = new AutenticationHelper();
         public bool Authenticate(string password)
         {
-            return Password == password;
+            return _autenticationHelper.ComparePassword(Password, password);
         }
     }
 }

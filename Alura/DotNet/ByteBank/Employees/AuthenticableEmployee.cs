@@ -11,13 +11,15 @@ namespace ByteBank.Employees
     {
         public string Password { get; set; }
 
+        private AutenticationHelper _autenticationHelper = new AutenticationHelper();
+
         public AuthenticableEmployee(double salary, string personID) : base(salary, personID)
         {
         }
 
         public bool Authenticate(string password)
         {
-            return Password == password;
+            return _autenticationHelper.ComparePassword(Password, password);
         }
     }
 }

@@ -1,0 +1,6 @@
+D:\ProgrammingCourses\Alura\DotNet\Models\bin\Debug\Models.dll
+D:\ProgrammingCourses\Alura\DotNet\Models\bin\Debug\Models.pdb
+D:\ProgrammingCourses\Alura\DotNet\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\ProgrammingCourses\Alura\DotNet\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\ProgrammingCourses\Alura\DotNet\Models\obj\Debug\Models.dll
+D:\ProgrammingCourses\Alura\DotNet\Models\obj\Debug\Models.pdb

@@ -4,6 +4,9 @@ using System;
 
 namespace ByteBank
 {
+    /// <summary>
+    /// Define uma conta corrente do banco ByteBank.
+    /// </summary>
     public class CheckingAccount
     {
         public AccountHolder AccountHolder { get; set; }
@@ -35,7 +38,11 @@ namespace ByteBank
             }
         }
 
-
+        /// <summary>
+        /// Cria uma instância de Conta Corrente
+        /// </summary>
+        /// <param name="branchNumber"> Repreenta o valor da propriedade <see cref="BranchNumber"/> e deve possuir número maior que zero. </param>
+        /// <param name="accountNumber"> Repreenta o valor da propriedade <see cref="accountNumber"/> e deve possuir número maior que zero.</param>
         public CheckingAccount(int branchNumber, int accountNumber)
         {
             if (branchNumber <= 0)
